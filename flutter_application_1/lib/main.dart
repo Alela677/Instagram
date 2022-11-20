@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'Instagram.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,41 +33,10 @@ class Inicio extends StatelessWidget {
     );
 
     return Scaffold(
-      drawer: Drawer(
-        child: ListView(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            SizedBox(
-              child: DrawerHeader(
-                child: Image.asset(
-                  'assets/images/incondrawer.jpg',
-                  fit: BoxFit.scaleDown,
-                ),
-              ),
-            ),
-            Ink(
-              color: Colors.amber,
-              child: const Text(
-                'Instagram',
-                style: TextStyle(fontSize: 25),
-              ),
-            ),
-            Ink(
-              color: Colors.amber,
-              child: const Text(
-                'Final',
-                style: TextStyle(fontSize: 25),
-              ),
-            ),
-          ],
-        ),
-      ),
+      drawer: const MyDrawer(),
       appBar: AppBar(
-        title: const Text("Inicio"),
-        actions: <Widget>[
-          IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
-        ],
-      ),
+          title: const Text("Inicio"),
+          backgroundColor: Color.fromARGB(255, 43, 2, 39)),
       body: Center(
         child: Column(
           children: [
@@ -107,6 +75,72 @@ class Inicio extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class MyDrawer extends StatelessWidget {
+  const MyDrawer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          const SizedBox(
+            child: DrawerHeader(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                      'https://as01.epimg.net/meristation/imagenes/2022/03/24/betech/1648147883_607222_1648148149_noticia_normal_recorte1.jpg'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: Text(''),
+            ),
+          ),
+          Ink(
+            color: Color(0xffac255e),
+            child: TextButton(
+              style: const ButtonStyle(
+                alignment: Alignment.centerLeft,
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Instagram()));
+              },
+              child: const Text(
+                'Instagram',
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Color(0xffffb56b),
+                ),
+              ),
+            ),
+          ),
+          Ink(
+            color: Color(0xffffb56b),
+            child: TextButton(
+              style: const ButtonStyle(
+                alignment: Alignment.centerLeft,
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyDrawer()));
+              },
+              child: const Text(
+                'Final',
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Color(0xffac255e),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
