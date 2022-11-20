@@ -471,7 +471,7 @@ class Instagram extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const Text('${Emojis.fire} Stories'),
+                    const Text('${Emojis.plus} Enginer'),
                   ],
                 ),
               ],
