@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/final.dart';
 import 'Instagram.dart';
 
 void main() {
@@ -68,7 +69,10 @@ class Inicio extends StatelessWidget {
                   ),
                   const Text(
                     'INSTAGRAM',
-                    style: TextStyle(color: Colors.white, fontSize: 40),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontFamily: 'Pacifico'),
                   ),
                 ],
               ),
@@ -128,8 +132,8 @@ class MyDrawer extends StatelessWidget {
                 alignment: Alignment.centerLeft,
               ),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => MyDrawer()));
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Final()));
               },
               child: const Text(
                 'Final',

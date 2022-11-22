@@ -1,8 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:flutter_application_1/main.dart';
 import 'package:emojis/emojis.dart';
 import 'package:emojis/emoji.dart';
@@ -49,7 +48,7 @@ class Instagram extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            color: Color.fromARGB(255, 255, 255, 255),
+            color: const Color.fromARGB(255, 255, 255, 255),
             height: 130,
             child: Row(
               children: [
@@ -62,7 +61,7 @@ class Instagram extends StatelessWidget {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color.fromARGB(255, 255, 239, 239),
+                              color: const Color.fromARGB(255, 255, 239, 239),
                               width: 6,
                             ),
                             image: const DecorationImage(
@@ -81,11 +80,11 @@ class Instagram extends StatelessWidget {
                   children: [
                     Align(
                       child: Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         child: Column(
                           children: [
                             Container(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: const Color.fromARGB(255, 255, 255, 255),
                               width: 60,
                               height: 90,
                               child: Column(
@@ -117,11 +116,11 @@ class Instagram extends StatelessWidget {
                   children: [
                     Align(
                       child: Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         child: Column(
                           children: [
                             Container(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: const Color.fromARGB(255, 255, 255, 255),
                               width: 60,
                               height: 90,
                               child: Column(
@@ -157,11 +156,11 @@ class Instagram extends StatelessWidget {
                   children: [
                     Align(
                       child: Padding(
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         child: Column(
                           children: [
                             Container(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: const Color.fromARGB(255, 255, 255, 255),
                               width: 60,
                               height: 90,
                               child: Column(
@@ -192,7 +191,7 @@ class Instagram extends StatelessWidget {
             ),
           ),
           Container(
-            color: Color.fromARGB(255, 255, 255, 255),
+            color: const Color.fromARGB(255, 255, 255, 255),
             height: 140,
             child: Column(
               children: [
@@ -276,7 +275,7 @@ class Instagram extends StatelessWidget {
             ),
           ),
           Container(
-            color: Color.fromARGB(255, 255, 255, 255),
+            color: const Color.fromARGB(255, 255, 255, 255),
             height: 60,
             child: Column(
               children: [
@@ -288,7 +287,7 @@ class Instagram extends StatelessWidget {
                       style: OutlinedButton.styleFrom(),
                       onPressed: () {},
                       child: Padding(
-                        padding: EdgeInsets.all(0),
+                        padding: const EdgeInsets.all(0),
                         child: Row(
                           children: const [
                             Text(
@@ -307,7 +306,7 @@ class Instagram extends StatelessWidget {
                       style: OutlinedButton.styleFrom(),
                       onPressed: () {},
                       child: Padding(
-                        padding: EdgeInsets.all(2),
+                        padding: const EdgeInsets.all(2),
                         child: Row(
                           children: const [
                             Text(
@@ -322,7 +321,7 @@ class Instagram extends StatelessWidget {
                       style: OutlinedButton.styleFrom(),
                       onPressed: () {},
                       child: Padding(
-                        padding: EdgeInsets.all(0),
+                        padding: const EdgeInsets.all(0),
                         child: Row(
                           children: const [
                             Text(
@@ -337,7 +336,7 @@ class Instagram extends StatelessWidget {
                       style: OutlinedButton.styleFrom(),
                       onPressed: () {},
                       child: Padding(
-                        padding: EdgeInsets.all(2),
+                        padding: const EdgeInsets.all(2),
                         child: Row(
                           children: const [
                             Icon(
@@ -354,7 +353,7 @@ class Instagram extends StatelessWidget {
             ),
           ),
           Container(
-            color: Color.fromARGB(255, 255, 255, 255),
+            color: const Color.fromARGB(255, 255, 255, 255),
             height: 110,
             child: ListView(
               scrollDirection: Axis.horizontal,
@@ -365,12 +364,12 @@ class Instagram extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Container(
-                          child: Icon(Icons.electric_bolt),
+                          child: const Icon(Icons.electric_bolt),
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 89, 159, 199),
+                            color: const Color.fromARGB(255, 89, 159, 199),
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: const Color.fromARGB(255, 255, 255, 255),
                               width: 6,
                             ),
                           ),
@@ -388,7 +387,7 @@ class Instagram extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Container(
-                          child: Icon(Icons.heart_broken),
+                          child: const Icon(Icons.heart_broken),
                           decoration: BoxDecoration(
                             color: const Color.fromARGB(183, 227, 132, 241),
                             shape: BoxShape.circle,
@@ -411,12 +410,12 @@ class Instagram extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Container(
-                          child: Icon(Icons.grid_on),
+                          child: const Icon(Icons.grid_on),
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 127, 231, 226),
+                            color: const Color.fromARGB(255, 127, 231, 226),
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: const Color.fromARGB(255, 255, 255, 255),
                               width: 6,
                             ),
                           ),
@@ -436,10 +435,10 @@ class Instagram extends StatelessWidget {
                         child: Container(
                           child: Icon(Icons.sunny),
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 138, 200, 252),
+                            color: const Color.fromARGB(255, 138, 200, 252),
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: const Color.fromARGB(255, 255, 255, 255),
                               width: 6,
                             ),
                           ),
@@ -459,10 +458,10 @@ class Instagram extends StatelessWidget {
                         child: Container(
                           child: Icon(Icons.grid_3x3),
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 110, 247, 252),
+                            color: const Color.fromARGB(255, 110, 247, 252),
                             shape: BoxShape.circle,
                             border: Border.all(
-                              color: Color.fromARGB(255, 255, 255, 255),
+                              color: const Color.fromARGB(255, 255, 255, 255),
                               width: 6,
                             ),
                           ),
@@ -478,7 +477,7 @@ class Instagram extends StatelessWidget {
             ),
           ),
           Container(
-            color: Color.fromARGB(255, 255, 255, 255),
+            color: const Color.fromARGB(255, 255, 255, 255),
             height: 50,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -490,7 +489,7 @@ class Instagram extends StatelessWidget {
             ),
           ),
           Container(
-            color: Color.fromARGB(255, 255, 255, 255),
+            color: const Color.fromARGB(255, 255, 255, 255),
             height: 220,
             child: GridView.count(
               // Crea una cuadrícula con tres columnas
