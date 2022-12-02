@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'Widget/Widgets.dart';
+import 'Widgets/finalWidgets/bontonFlotanteFinal.dart';
+import 'Widgets/finalWidgets/contenedorTextoFinal.dart';
+import 'Widgets/finalWidgets/nombreFinal.dart';
 
 class Final extends StatelessWidget {
   const Final({super.key});
